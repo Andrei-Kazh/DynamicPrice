@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подбор оптимальной цены</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__block">
+                <div class="block__title">
+                    Заполните все поля и получите оптимальную цену</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="first_block">
+                <div>
+                    <p>Введите <br> цену</p>
+                    <input type="text" placeholder="5.55">
+                </div>
+                <div>
+                    <p>Введите <br> первую дату</p>
+                    <input type="text" placeholder="ГОД.МЕСЯЦ.ЧИСЛО">
+                </div>
+                <div>
+                    <p>Введите <br> исходное количество</p>
+                    <input type="text" placeholder="30">
+                </div>
+            </div>
+            <!--  -->
+            <div class="second_block">
+                <div>
+                    <p>Введите <br> предельную цену</p>
+                    <input type="text" placeholder="10">
+                </div>
+                <div>
+                    <p>Введите <br> вторую дату</p>
+                    <input type="text" placeholder="ГОД.МЕСЯЦ.ЧИСЛО">
+                </div>
+                <div>
+                    <p>Введите <br> текущее количество</p>
+                    <input type="text" placeholder="10">
+                </div>
+            </div>
+
+        </div>
+        <div class="btn__calc">
+            <button>Рассчитать</button>
+        </div>
+        <div class="footer">
+            <div class="footer__price">Стандартная цена<p id="curr_price" class="price"> 0</p>
+            </div>
+            <div class="footer__price">Оптимальная цена<p id="new_price" "price"> 0</p>
+            </div>
+        </div>
+    </div>
+    <script src="setprice.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
