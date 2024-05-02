@@ -18,7 +18,7 @@ body {
 .block__title {
     padding: 0.9rem;
     color: black;
-    font-size: 1.15rem;    
+    font-size: 1.15rem;
 }
 
 
@@ -43,7 +43,8 @@ div p {
     margin: 0.18rem;
 
 }
-.content p{
+
+.content p {
     font-size: 0.82rem;
 }
 
@@ -100,4 +101,27 @@ input {
 
 #new_price {
     color: green;
+}
+
+@media screen and (max-width: 590px) {
+    .block__title {
+        padding: 0.7rem;
+    }
+
+    div p {
+        width: 8rem;
+        padding: 0.33rem;
+        margin: 0.02rem;
+
+    }
+
+    .content p {
+        font-size: 0.71rem;
+    }
+
+    input {
+        width: 8.15rem;
+        height: 0.9rem;
+        padding: 0.11rem;
+    }
 }
